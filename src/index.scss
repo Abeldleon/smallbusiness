@@ -1,0 +1,259 @@
+$teal: #18AABF;
+$pink: #ffc0cb;
+$purple: #9782dd;
+$yellow: #ffea61;
+$ink: #212326;
+$lightyeloow: #fcf8dc;
+$softwhite: #eee;
+$footer: #3c8689;
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Changed the Font */
+}
+
+/*/////////navigation////////////*/
+.header {
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  background-color: $teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid $purple;
+  z-index: 1;
+}
+.logo {
+  color: $pink;
+  text-shadow: 0.2rem 0.1rem 0 $purple;
+  margin-left: 1rem;
+}
+.nav {
+  margin-right: 1rem;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    font-weight:800;
+    color: $yellow;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+.mobileMenuButton {
+  font-size: 1.5rem;
+  display: none;
+  border-radius:0;
+  color: $yellow;
+  background-color: transparent;
+  border: none; 
+  padding: 0;
+}
+
+/*///////////Splash////////////////////////*/
+.splash{
+  position: relative;
+}
+.img-splash {
+  height: 40rem;
+  background-image: url("./images/splash.webp");
+  background-size: cover;
+  background-position: center;
+}
+.message{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  bottom: 2rem;
+  h1{
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    color: $yellow;
+    text-shadow: 0.3rem 0.2rem 0 $purple;
+  }
+  a{
+    width: min-content;
+  }
+  button{
+    font-size: 2rem;
+    background-color: $teal;
+  }
+}
+/*//////////Items List//////////////////*/
+.menu-items-wrapper {
+  background-image: url("./images/dddepth-319.webp");
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 5rem;
+}
+
+.title {
+  background-color: $teal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  color: $yellow;
+  margin: 0;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.itemlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: $purple;
+  margin: 2rem;
+  width: inherit;
+  max-width: 20rem;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.item-name {
+  color: $yellow;
+  margin-left: 1rem;
+}
+
+.item-price {
+  color: $softwhite;
+  margin-right: 1rem;
+}
+
+.description {
+  display: none;
+
+  p {
+    color: $softwhite;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+.description.expanded {
+  display: block;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: $softwhite;
+  border: 1px solid $softwhite;
+  border-radius: 0.3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.solo-row {
+  display: flex;
+  justify-content: center;
+}
+
+/*///////////Footer/////////////*/
+footer {
+  background-color: $footer;
+  color: $softwhite;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/*//////////About//////////////*/
+.about-wrapper{
+  background-color: $lightyeloow;
+}
+.about-container {
+  margin: auto;
+  max-width: 1140px;
+  padding: 2rem;
+  
+  h1, h2 {
+    margin-top: 2rem;
+    color: $pink;
+    text-align: center;
+    text-shadow: 2px 1px $purple;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color:$softwhite;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 2rem;
+  }
+  img{
+    width: 10rem;
+  }
+}
+.img-container{
+  display: flex;
+  justify-content: center;
+  background-color: $teal;
+}
+
+/*///Mobile////*/
+@media (max-width: 768px) {
+  .splash-container {
+    height: auto;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .mobileMenuButton {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.expanded {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+
+    ul {
+      display: grid;
+      background-color: $teal;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+  }
+}
