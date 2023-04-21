@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/smallbusiness/static/css/main.a36e5f85.css",
-    "main.js": "/smallbusiness/static/js/main.e6434017.js",
-    "static/media/1.jpg": "/smallbusiness/static/media/1.729d0b0584c112843122.jpg",
+    "main.css": "/smallbusiness/static/css/main.fffd5370.css",
+    "main.js": "/smallbusiness/static/js/main.efcef487.js",
     "static/media/dddepth-319.webp": "/smallbusiness/static/media/dddepth-319.b252cc3b825b2cef56e1.webp",
-    "static/media/2.jpg": "/smallbusiness/static/media/2.7c14b9584eafd63ba389.jpg",
-    "static/media/3.jpg": "/smallbusiness/static/media/3.2f6769ee4ef1c75d4a9e.jpg",
-    "static/media/4.jpg": "/smallbusiness/static/media/4.803981dcab14b875b6c8.jpg",
+    "static/media/splash.webp": "/smallbusiness/static/media/splash.ad52dfe2fa9fcb32e497.webp",
+    "static/media/tostilocos.webp": "/smallbusiness/static/media/tostilocos.03b1eb3f3e5c240920b3.webp",
+    "static/media/popsicles.webp": "/smallbusiness/static/media/popsicles.395fbedf41d55956e700.webp",
+    "static/media/mangonadas.webp": "/smallbusiness/static/media/mangonadas.128f554e9610a257b241.webp",
+    "static/media/mangonada.webp": "/smallbusiness/static/media/mangonada.1825bad17ab579ba3c2a.webp",
     "index.html": "/smallbusiness/index.html",
-    "main.a36e5f85.css.map": "/smallbusiness/static/css/main.a36e5f85.css.map",
-    "main.e6434017.js.map": "/smallbusiness/static/js/main.e6434017.js.map"
+    "main.fffd5370.css.map": "/smallbusiness/static/css/main.fffd5370.css.map",
+    "main.efcef487.js.map": "/smallbusiness/static/js/main.efcef487.js.map"
   },
   "entrypoints": [
-    "static/css/main.a36e5f85.css",
-    "static/js/main.e6434017.js"
+    "static/css/main.fffd5370.css",
+    "static/js/main.efcef487.js"
   ]
 }
