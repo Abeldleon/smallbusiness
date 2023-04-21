@@ -25,7 +25,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="" onClick={handleMobileMenuToggle}>
+            <Link to="/smallbusiness/about" className="" onClick={handleMobileMenuToggle}>
               About
             </Link>
           </li>
